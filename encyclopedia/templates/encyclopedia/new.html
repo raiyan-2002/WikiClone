@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% load static %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1> Create New Page!</h1>
+
+    <form action="" method="post">
+        <input placeholder="Entry Title" name = "title" autofocus id="title">
+        <br>
+        <br>
+        <textarea placeholder="Entry Description (use markdown syntax)" name = "description" autofocus id="description"></textarea>
+        <br>
+        {% csrf_token %}
+        <input type="submit" name="submitInfo" value="Submit">
+    </form>
+
+{% endblock %}

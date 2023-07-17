@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% load static %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1> Edit "{{ title }}" </h1>
+
+    <form action="" method="post">
+        <textarea name = "description" autofocus id="description">{{description}}</textarea>
+        <br>
+        {% csrf_token %}
+        <input type="submit" name="submitInfo" value="Submit">
+    </form>
+
+{% endblock %}

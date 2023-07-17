@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% load static %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Error!</h1>
+
+    <h4>There is already an entry for "<b>{{invalid_name}}</b>", <a href="{{link}}"> edit it</a> instead! </h4>
+
+    <img src = "{% static 'encyclopedia/SAD.gif' %}">
+
+
+{% endblock %}

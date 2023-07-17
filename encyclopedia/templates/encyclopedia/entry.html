@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    {% if edited %}
+        <div class="alert alert-success" role="alert">
+            Successful edit!
+        </div>
+    {% endif %}
+    {% if new %}
+        <div class="alert alert-success" role="alert">
+            Successful new page!
+        </div>
+    {% endif %}
+    {{entry | safe}}
+    <div id="container">
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type = "submit" name= "edit" value="Edit this page!">
+            <input type = "submit" name = "delete" value="Delete this page!">
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+#description {
+    height: 75vh;
+    width: 80%;
+}
+
+button {
+    border: 1px solid white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: lightgray;
+  }
+
+  input[type=submit]:hover {
+    border: 1px solid black;
+}
+
+#container {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+input[type=submit] {
+    border: 1px solid white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: lightgray;
+}
+
+div[role=alert] {
+    text-align: center;
+}
