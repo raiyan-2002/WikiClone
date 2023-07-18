@@ -266,7 +266,7 @@
         "kind": 2,
         "importPath": "encyclopedia.views",
         "description": "encyclopedia.views",
-        "peekOfCode": "def edit(request, name):\n    global edited\n    # if we are posting to this page, it means the entry has been edited, chanage edited variable\n    if request.method == \"POST\":\n        with open(\"/Users/raiyan/Documents/CS50W/wiki/entries/\" + name + \".md\", \"w\") as file:\n            file.write(request.POST[\"description\"])\n        edited = True\n        return redirect(entries, name=name)\n    # if request is GET, render populated edit page with current description info\n    else:",
+        "peekOfCode": "def edit(request, name):\n    global edited\n    # if we are posting to this page, it means the entry has been edited, chanage edited variable\n    if request.method == \"POST\":\n        with open(\"/Users/raiyan/Documents/CS50W/Project1/entries/\" + name + \".md\", \"w\") as file:\n            file.write(request.POST[\"description\"])\n        edited = True\n        return redirect(entries, name=name)\n    # if request is GET, render populated edit page with current description info\n    else:",
         "detail": "encyclopedia.views",
         "documentation": {}
     },

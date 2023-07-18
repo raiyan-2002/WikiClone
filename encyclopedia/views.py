@@ -42,7 +42,7 @@ def new(request):
         
         description = request.POST["description"]
         
-        with open ("/Users/raiyan/Documents/CS50W/wiki/entries/" + title + ".md", "w") as file:
+        with open ("/Users/raiyan/Documents/CS50W/Project1/entries/" + title + ".md", "w") as file:
             file.write(description)
 
         markdowner = Markdown()
@@ -160,7 +160,7 @@ def edit(request, name):
 
     # if we are posting to this page, it means the entry has been edited, chanage edited variable
     if request.method == "POST":
-        with open("/Users/raiyan/Documents/CS50W/wiki/entries/" + name + ".md", "w") as file:
+        with open("/Users/raiyan/Documents/CS50W/Project1/entries/" + name + ".md", "w") as file:
             file.write(request.POST["description"])
         edited = True
         return redirect(entries, name=name)
