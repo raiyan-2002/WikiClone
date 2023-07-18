@@ -95,9 +95,10 @@ def entries(request, name):
             return redirect(edit, name=name)
         elif "delete" in request.POST:
             deleted = True
-            path = "/Users/raiyan/Documents/CS50W/wiki/entries/" + name + ".md"
+            path = "/Users/raiyan/Documents/CS50W/Project1/entries/" + name + ".md"
             os.remove(path)
             return redirect(index)
+
 
     lower_list = []
     all = util.list_entries()
